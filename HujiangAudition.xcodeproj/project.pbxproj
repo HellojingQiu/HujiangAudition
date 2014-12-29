@@ -3252,6 +3252,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ThirdLibrary/UMAnalytics_Sdk_3.1.8",
 				);
+				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -3266,6 +3267,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ThirdLibrary/UMAnalytics_Sdk_3.1.8",
 				);
+				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

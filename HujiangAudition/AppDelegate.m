@@ -57,7 +57,7 @@
                                                        options:NSJSONWritingPrettyPrinted
                                                          error:nil];
     
-    NSLog(@"%@", [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding]);
+    NSLog(@"我要的信息:%@", [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding]);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
