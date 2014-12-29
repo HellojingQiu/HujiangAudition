@@ -23,35 +23,42 @@
 //    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 //    [self test];
-//    [self test];
-    self.window.backgroundColor=[UIColor whiteColor];
-    self.window.hidden=NO;
+    [self test];
+//    self.window.backgroundColor=[UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     
-    VCRootList *root=[[VCRootList alloc]init];
-    self.window.rootViewController=root;
+    [MobClick startWithAppkey:UMKey reportPolicy:BATCH channelId:@"Web"];
+	    //设置APP版本号
+    [MobClick setAppVersion:XcodeAppVersion];
+    //设置打印sdk的log信息
+    [MobClick setLogEnabled:YES];
+    
+//    VCRootList *root=[[VCRootList alloc]init];
+//    self.window.rootViewController=root;
     
     NSLog(@"sd");
     
     return YES;
 }
 
+
 -(void)createTabBar{
     
 }
 
-//-(void)test{
-//    Class cls = NSClassFromString(@"UMANUtil");
-//    SEL deviceIDSelector = @selector(openUDIDString);
-//    NSString *deviceID = nil;
-//    if(cls && [cls respondsToSelector:deviceIDSelector]){
-//        deviceID = [cls performSelector:deviceIDSelector];
-//    }
-//    NSData* jsonData = [NSJSONSerialization dataWithJSONObject:@{@"oid" : deviceID}
-//                                                       options:NSJSONWritingPrettyPrinted
-//                                                         error:nil];
-//    
-//    NSLog(@"%@", [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding]);
-//}
+-(void)test{
+    Class cls = NSClassFromString(@"UMANUtil");
+    SEL deviceIDSelector = @selector(openUDIDString);
+    NSString *deviceID = nil;
+    if(cls && [cls respondsToSelector:deviceIDSelector]){
+        deviceID = [cls performSelector:deviceIDSelector];
+    }
+    NSData* jsonData = [NSJSONSerialization dataWithJSONObject:@{@"oid" : deviceID}
+                                                       options:NSJSONWritingPrettyPrinted
+                                                         error:nil];
+    
+    NSLog(@"%@", [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding]);
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

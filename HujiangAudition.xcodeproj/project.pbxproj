@@ -16,7 +16,6 @@
 		BCDE59D11A518D0A0084A057 /* GeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDE59D01A518D0A0084A057 /* GeneralViewController.m */; };
 		BCDE59D41A518D3D0084A057 /* VCRootList.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDE59D31A518D3D0084A057 /* VCRootList.m */; };
 		BCDE59DD1A5194350084A057 /* umengKey.c in Sources */ = {isa = PBXBuildFile; fileRef = BCDE59DC1A5194350084A057 /* umengKey.c */; };
-		BCDE5A5F1A5195300084A057 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDE5A5C1A5195300084A057 /* libMobClickLibrary.a */; };
 		BCDE5D2D1A5198300084A057 /* ABButtonStateA.png in Resources */ = {isa = PBXBuildFile; fileRef = BCDE5A661A51982C0084A057 /* ABButtonStateA.png */; };
 		BCDE5D2E1A5198300084A057 /* ABButtonStateA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCDE5A671A51982C0084A057 /* ABButtonStateA@2x.png */; };
 		BCDE5D2F1A5198300084A057 /* ABButtonStateAB.png in Resources */ = {isa = PBXBuildFile; fileRef = BCDE5A681A51982C0084A057 /* ABButtonStateAB.png */; };
@@ -730,6 +729,7 @@
 		BCDE5FF31A5198300084A057 /* zhuxiao_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCDE5D2C1A5198300084A057 /* zhuxiao_on@2x.png */; };
 		BCDE5FF51A519BD00084A057 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDE5FF41A519BD00084A057 /* QuartzCore.framework */; };
 		BCDE5FF71A519BDE0084A057 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDE5FF61A519BDE0084A057 /* CoreData.framework */; };
+		BCDE5FFA1A51A68A0084A057 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDE5A5C1A5195300084A057 /* libMobClickLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1486,7 +1486,7 @@
 			files = (
 				BCDE5FF71A519BDE0084A057 /* CoreData.framework in Frameworks */,
 				BCDE5FF51A519BD00084A057 /* QuartzCore.framework in Frameworks */,
-				BCDE5A5F1A5195300084A057 /* libMobClickLibrary.a in Frameworks */,
+				BCDE5FFA1A51A68A0084A057 /* libMobClickLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3200,7 +3200,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -3235,7 +3235,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -3250,7 +3250,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/ThirdLibrary/Analytics_iOS_SDK_3.1.8/UMAnalytics_Sdk_3.1.8",
 					"$(PROJECT_DIR)/ThirdLibrary/UMAnalytics_Sdk_3.1.8",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3265,7 +3264,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/ThirdLibrary/Analytics_iOS_SDK_3.1.8/UMAnalytics_Sdk_3.1.8",
 					"$(PROJECT_DIR)/ThirdLibrary/UMAnalytics_Sdk_3.1.8",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
