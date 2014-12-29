@@ -728,6 +728,8 @@
 		BCDE5FF11A5198300084A057 /* zhuxiao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCDE5D2A1A5198300084A057 /* zhuxiao@2x.png */; };
 		BCDE5FF21A5198300084A057 /* zhuxiao_on.png in Resources */ = {isa = PBXBuildFile; fileRef = BCDE5D2B1A5198300084A057 /* zhuxiao_on.png */; };
 		BCDE5FF31A5198300084A057 /* zhuxiao_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCDE5D2C1A5198300084A057 /* zhuxiao_on@2x.png */; };
+		BCDE5FF51A519BD00084A057 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDE5FF41A519BD00084A057 /* QuartzCore.framework */; };
+		BCDE5FF71A519BDE0084A057 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDE5FF61A519BDE0084A057 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1472,6 +1474,9 @@
 		BCDE5D2A1A5198300084A057 /* zhuxiao@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zhuxiao@2x.png"; sourceTree = "<group>"; };
 		BCDE5D2B1A5198300084A057 /* zhuxiao_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zhuxiao_on.png; sourceTree = "<group>"; };
 		BCDE5D2C1A5198300084A057 /* zhuxiao_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zhuxiao_on@2x.png"; sourceTree = "<group>"; };
+		BCDE5FF41A519BD00084A057 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BCDE5FF61A519BDE0084A057 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BCDE5FF81A519BF10084A057 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1479,6 +1484,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCDE5FF71A519BDE0084A057 /* CoreData.framework in Frameworks */,
+				BCDE5FF51A519BD00084A057 /* QuartzCore.framework in Frameworks */,
 				BCDE5A5F1A5195300084A057 /* libMobClickLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1496,6 +1503,9 @@
 		BCDE59941A51872A0084A057 = {
 			isa = PBXGroup;
 			children = (
+				BCDE5FF81A519BF10084A057 /* MobileCoreServices.framework */,
+				BCDE5FF61A519BDE0084A057 /* CoreData.framework */,
+				BCDE5FF41A519BD00084A057 /* QuartzCore.framework */,
 				BCDE5A651A51982C0084A057 /* image */,
 				BCDE59DB1A5194350084A057 /* ThirdLibrary */,
 				BCDE59CA1A5189590084A057 /* 界面 */,
