@@ -9,11 +9,6 @@
 /* Begin PBXBuildFile section */
 		BC3B781C1A52E98D00622B39 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC3B781B1A52E98D00622B39 /* Default-568h@2x.png */; };
 		BC3B781E1A52EA2A00622B39 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BC3B781D1A52EA2A00622B39 /* libsqlite3.dylib */; };
-		BC8148FC1A52F19A003D48A0 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8148F31A52F19A003D48A0 /* FMDatabase.m */; };
-		BC8148FD1A52F19A003D48A0 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8148F51A52F19A003D48A0 /* FMDatabaseAdditions.m */; };
-		BC8148FE1A52F19A003D48A0 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8148F71A52F19A003D48A0 /* FMDatabasePool.m */; };
-		BC8148FF1A52F19A003D48A0 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8148F91A52F19A003D48A0 /* FMDatabaseQueue.m */; };
-		BC8149001A52F19A003D48A0 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8148FB1A52F19A003D48A0 /* FMResultSet.m */; };
 		BCD64B351A52DDE70067FEAA /* NSString+Hashing.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD64B341A52DDE70067FEAA /* NSString+Hashing.m */; };
 		BCDE59A31A51872A0084A057 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDE59A21A51872A0084A057 /* main.m */; };
 		BCDE59A61A51872A0084A057 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDE59A51A51872A0084A057 /* AppDelegate.m */; };
@@ -753,16 +748,6 @@
 /* Begin PBXFileReference section */
 		BC3B781B1A52E98D00622B39 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BC3B781D1A52EA2A00622B39 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		BC8148F21A52F19A003D48A0 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
-		BC8148F31A52F19A003D48A0 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
-		BC8148F41A52F19A003D48A0 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		BC8148F51A52F19A003D48A0 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		BC8148F61A52F19A003D48A0 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
-		BC8148F71A52F19A003D48A0 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
-		BC8148F81A52F19A003D48A0 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
-		BC8148F91A52F19A003D48A0 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
-		BC8148FA1A52F19A003D48A0 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
-		BC8148FB1A52F19A003D48A0 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		BCD64B331A52DDE70067FEAA /* NSString+Hashing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Hashing.h"; path = "MD5/NSString+Hashing.h"; sourceTree = "<group>"; };
 		BCD64B341A52DDE70067FEAA /* NSString+Hashing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Hashing.m"; path = "MD5/NSString+Hashing.m"; sourceTree = "<group>"; };
 		BCDE599D1A51872A0084A057 /* HujiangAudition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HujiangAudition.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1523,23 +1508,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BC8148F11A52F19A003D48A0 /* FMDB */ = {
-			isa = PBXGroup;
-			children = (
-				BC8148F21A52F19A003D48A0 /* FMDatabase.h */,
-				BC8148F31A52F19A003D48A0 /* FMDatabase.m */,
-				BC8148F41A52F19A003D48A0 /* FMDatabaseAdditions.h */,
-				BC8148F51A52F19A003D48A0 /* FMDatabaseAdditions.m */,
-				BC8148F61A52F19A003D48A0 /* FMDatabasePool.h */,
-				BC8148F71A52F19A003D48A0 /* FMDatabasePool.m */,
-				BC8148F81A52F19A003D48A0 /* FMDatabaseQueue.h */,
-				BC8148F91A52F19A003D48A0 /* FMDatabaseQueue.m */,
-				BC8148FA1A52F19A003D48A0 /* FMResultSet.h */,
-				BC8148FB1A52F19A003D48A0 /* FMResultSet.m */,
-			);
-			path = FMDB;
-			sourceTree = "<group>";
-		};
 		BCD64B321A52DD6A0067FEAA /* MD5 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1645,7 +1613,6 @@
 		BCDE59DB1A5194350084A057 /* ThirdLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				BC8148F11A52F19A003D48A0 /* FMDB */,
 				BCD64B321A52DD6A0067FEAA /* MD5 */,
 				BCDE5A5B1A5195300084A057 /* UMAnalytics_Sdk_3.1.8 */,
 				BCDE59DC1A5194350084A057 /* umengKey.c */,
@@ -3194,16 +3161,11 @@
 				BCDE59DD1A5194350084A057 /* umengKey.c in Sources */,
 				BCDE59A61A51872A0084A057 /* AppDelegate.m in Sources */,
 				BCD64B351A52DDE70067FEAA /* NSString+Hashing.m in Sources */,
-				BC8148FC1A52F19A003D48A0 /* FMDatabase.m in Sources */,
 				BCDE59D11A518D0A0084A057 /* GeneralViewController.m in Sources */,
-				BC8148FF1A52F19A003D48A0 /* FMDatabaseQueue.m in Sources */,
-				BC8149001A52F19A003D48A0 /* FMResultSet.m in Sources */,
-				BC8148FE1A52F19A003D48A0 /* FMDatabasePool.m in Sources */,
 				BCDE59D41A518D3D0084A057 /* VCRootList.m in Sources */,
 				BCDE59CE1A518AC20084A057 /* MyUITabBarController.m in Sources */,
 				BCDE59A31A51872A0084A057 /* main.m in Sources */,
 				BCDE59A91A51872A0084A057 /* HujiangAudition.xcdatamodeld in Sources */,
-				BC8148FD1A52F19A003D48A0 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
