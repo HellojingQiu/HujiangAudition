@@ -10,6 +10,8 @@
 #import "MobClick.h"
 #import "VCRootList.h"
 
+#import "NSString+Hashing.h"
+
 #define UMKey @"54a15a9ffd98c56bd3000338"
 @interface AppDelegate ()
 
@@ -20,24 +22,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 //    [self test];
-    [self test];
-//    self.window.backgroundColor=[UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    [MobClick startWithAppkey:UMKey reportPolicy:BATCH channelId:@"Web"];
-	    //设置APP版本号
-    [MobClick setAppVersion:XcodeAppVersion];
-    //设置打印sdk的log信息
-    [MobClick setLogEnabled:YES];
+//    [MobClick startWithAppkey:UMKey reportPolicy:BATCH channelId:@"Web"];
+//	    //设置APP版本号
+//    [MobClick setAppVersion:XcodeAppVersion];
+//    //设置打印sdk的log信息
+//    [MobClick setLogEnabled:YES];
     
-//    VCRootList *root=[[VCRootList alloc]init];
-//    self.window.rootViewController=root;
+    VCRootList *root=[[VCRootList alloc]init];
+    self.window.rootViewController=root;
     
-    NSLog(@"sd");
+    NSString *str=@"shengming";
     
+    NSLog(@"MD5:\n%@",[str MD5Hash]);
+    NSLog(@"SHA1:\n%@",[str Sha1Hash]);
     return YES;
 }
 
