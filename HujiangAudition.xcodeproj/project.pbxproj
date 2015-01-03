@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC2EB82D1A57EB9D00C79F6A /* BOZPongRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2EB82C1A57EB9D00C79F6A /* BOZPongRefreshControl.m */; };
 		BC3B781C1A52E98D00622B39 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC3B781B1A52E98D00622B39 /* Default-568h@2x.png */; };
 		BC3B781E1A52EA2A00622B39 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BC3B781D1A52EA2A00622B39 /* libsqlite3.dylib */; };
 		BC9A10CF1A53A0CD00C23CFA /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9A10C61A53A0CD00C23CFA /* FMDatabase.m */; };
@@ -751,6 +752,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC2EB82B1A57EB9D00C79F6A /* BOZPongRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOZPongRefreshControl.h; sourceTree = "<group>"; };
+		BC2EB82C1A57EB9D00C79F6A /* BOZPongRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOZPongRefreshControl.m; sourceTree = "<group>"; };
 		BC3B781B1A52E98D00622B39 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BC3B781D1A52EA2A00622B39 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		BC9A10C51A53A0CD00C23CFA /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
@@ -1523,6 +1526,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC2EB82A1A57EB9D00C79F6A /* BOZPongRefreshControl */ = {
+			isa = PBXGroup;
+			children = (
+				BC2EB82B1A57EB9D00C79F6A /* BOZPongRefreshControl.h */,
+				BC2EB82C1A57EB9D00C79F6A /* BOZPongRefreshControl.m */,
+			);
+			path = BOZPongRefreshControl;
+			sourceTree = "<group>";
+		};
+		BC2EB82E1A57EC3200C79F6A /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+				BCDE5FF81A519BF10084A057 /* MobileCoreServices.framework */,
+				BCDE5FF61A519BDE0084A057 /* CoreData.framework */,
+				BCDE5FF41A519BD00084A057 /* QuartzCore.framework */,
+				BC3B781D1A52EA2A00622B39 /* libsqlite3.dylib */,
+			);
+			name = FrameWorks;
+			sourceTree = "<group>";
+		};
 		BC9A10C41A53A0CD00C23CFA /* FMDB-New */ = {
 			isa = PBXGroup;
 			children = (
@@ -1552,11 +1575,7 @@
 		BCDE59941A51872A0084A057 = {
 			isa = PBXGroup;
 			children = (
-				BC3B781D1A52EA2A00622B39 /* libsqlite3.dylib */,
 				BC3B781B1A52E98D00622B39 /* Default-568h@2x.png */,
-				BCDE5FF81A519BF10084A057 /* MobileCoreServices.framework */,
-				BCDE5FF61A519BDE0084A057 /* CoreData.framework */,
-				BCDE5FF41A519BD00084A057 /* QuartzCore.framework */,
 				BCDE5A651A51982C0084A057 /* image */,
 				BCDE59DB1A5194350084A057 /* ThirdLibrary */,
 				BCDE59CA1A5189590084A057 /* 界面 */,
@@ -1564,6 +1583,7 @@
 				BCDE599F1A51872A0084A057 /* HujiangAudition */,
 				BCDE59BC1A51872A0084A057 /* HujiangAuditionTests */,
 				BCDE599E1A51872A0084A057 /* Products */,
+				BC2EB82E1A57EC3200C79F6A /* FrameWorks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1645,6 +1665,7 @@
 		BCDE59DB1A5194350084A057 /* ThirdLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				BC2EB82A1A57EB9D00C79F6A /* BOZPongRefreshControl */,
 				BC9A10C41A53A0CD00C23CFA /* FMDB-New */,
 				BCD64B321A52DD6A0067FEAA /* MD5 */,
 				BCDE5A5B1A5195300084A057 /* UMAnalytics_Sdk_3.1.8 */,
@@ -3194,6 +3215,7 @@
 				BCDE59DD1A5194350084A057 /* umengKey.c in Sources */,
 				BCDE59A61A51872A0084A057 /* AppDelegate.m in Sources */,
 				BCD64B351A52DDE70067FEAA /* NSString+Hashing.m in Sources */,
+				BC2EB82D1A57EB9D00C79F6A /* BOZPongRefreshControl.m in Sources */,
 				BC9A10CF1A53A0CD00C23CFA /* FMDatabase.m in Sources */,
 				BCDE59D11A518D0A0084A057 /* GeneralViewController.m in Sources */,
 				BC9A10D21A53A0CD00C23CFA /* FMDatabaseQueue.m in Sources */,

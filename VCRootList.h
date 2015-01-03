@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "GeneralViewController.h"
-@interface VCRootList : GeneralViewController
+@interface VCRootList : GeneralViewController<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>{
+    UITableView *_tableView;
+    NSMutableArray *_arrayData;
+}
+
 
 @end

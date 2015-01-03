@@ -35,10 +35,10 @@
     VCRootList *root=[[VCRootList alloc]init];
     self.window.rootViewController=root;
     
-    NSString *str=@"shengming";
+//    NSString *str=@"shengming";
     
-    NSLog(@"MD5:\n%@",[str MD5Hash]);
-    NSLog(@"SHA1:\n%@",[str Sha1Hash]);
+//    NSLog(@"MD5:\n%@",[str MD5Hash]);
+//    NSLog(@"SHA1:\n%@",[str Sha1Hash]);
     return YES;
 }
 
